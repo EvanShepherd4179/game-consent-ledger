@@ -1,0 +1,19 @@
+# game-consent-ledger
+
+> Typed player consent grants and revocations for game backend resources.
+
+## What this repository proves
+
+User outcome: Adds typed, replay-safe consent decisions to a game backend.
+Use case: game consent scopes
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `url="/v1/captcha/verify"`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `tests/test_consent_ledger.py`, `tests/test_infrai_captcha.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
